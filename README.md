@@ -17,6 +17,7 @@
 __eh_frame_hdr_start = SIZEOF(.eh_frame_hdr) > 0 ? ADDR(.eh_frame_hdr) : 0;
 __eh_frame_hdr_end = SIZEOF(.eh_frame_hdr) > 0 ? . : 0;
 ```
+* Add this flag to linker arguments: ``--eh-frame-hdr``
 * Provide malloc, calloc, realloc and free in your elf file.
 * Link provided static library (out/libexceptions.a) to your elf file.
 * Optionally provide your own versions of functions declared as "weak" (src/main.cpp) in your elf file.\
