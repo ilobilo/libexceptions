@@ -25,7 +25,7 @@ For example:
 ```c
 void abort(); // run asm volatile ("cli; hlt");
 void __assert_fail(const char *message, const char *file, int line, const char *func); // print message, file, line and func in terminal
-void __assert_func(const char *file, int line, const char *func, const char *message) // same as previous
+void __assert_func(const char *file, int line, const char *func, const char *message); // same as previous
 int __snprintf_chk(char *str, size_t maxlen, int flag, size_t len, const char *format, ...);
 int __fprintf_chk(void *fp, int flag, const char *format, ...);
 int fflush(void *fp);
