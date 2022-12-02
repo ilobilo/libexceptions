@@ -1,5 +1,6 @@
 # libexceptions
 ## C++ exceptions on bare metal
+Note: This repo uses llvm libraries, easier way is to just use libgcc and libsupc++
 
 ### Usage
 * Add this to your linker script:
